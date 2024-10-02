@@ -21,7 +21,19 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-h1 {
+.imgUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 50px;
+}
+
+
+h1, h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #007bff;
@@ -70,7 +82,7 @@ input[readonly] {
     cursor: not-allowed;
 }
 
-button {
+.btn {
     background-color: #007bff;
     color: #fff;
     padding: 10px;
@@ -79,6 +91,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     width: 100%;
+    text-align: center; 
 }
 
 button:hover {

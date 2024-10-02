@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
 
     <div class="container">
         <h1>HubFomeZero</h1>
         <!-- <h1>Cadastro</h1> -->
+        <div class="imgUsuario">
+            <img src="../imagens/fornecedor.png" alt="Doador" class="img_usuario">
+            <h2>Fornecedor de cestas</h2>
+        </div>
         <p>Preencha os dados abaixo para se cadastrar na plataforma de doação de cestas básicas.</p>
 
         <form class="cadastro-form">
@@ -39,7 +43,7 @@
 
             <!-- Segundo Bloco -->
             <div class="form-section">
-                <h2>Endereço</h2>
+                <h2>Endereço do Fornecedor</h2>
 
                 <label for="cep">CEP</label>
                 <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" onblur="buscarEndereco()">
@@ -60,11 +64,11 @@
                 <input type="text" id="estado" name="estado" placeholder="Digite o estado" readonly>
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <a href="./confirmaCadastro.html" class="btn">Cadastrar </a>
         </form>
     </div>
 
-    <script src="./js/cadastro.js"></script>
+    
 
 </body>
 </html>
