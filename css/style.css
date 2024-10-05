@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
-/* Configigurações Gerais */
+/* Configurações Gerais */
 * {
-    margin: 0px;
+    
     padding: 0px;
     box-sizing: border-box;
     font-family: Roboto;
     color: rgba(0, 0, 0, 0.785);
-    max-width: 1200px;
-    margin: auto;
+   
 }
 
+body{
+    margin: auto;
+    max-width: 1200px;
+}
 :root {
-    --btn-color:rgba(0, 0, 0, 0.785);
+    --btn-color: rgba(0, 0, 0, 0.785);
     --text-branco: white;
 }
 
@@ -27,40 +28,81 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 120px;
-    padding:  20px 0px;
+    padding: 20px 0px;
     margin: 0px 30px 80px 30px;
-
 }
 
 .btn {
-    background-color:var(--btn-color) ;
+    background-color: var(--btn-color);
     text-decoration: none;
     padding: 5px 50px;
     color: var(--text-branco);
     border: 1px solid var(--btn-color);
 }
 
-.btn:hover{
+.btn:hover {
     color: black;
     background-color: white;
     border: 2px solid var(--btn-color);
 }
 
-.menu{
+/* Configurações Gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: rgba(0, 0, 0, 0.785);
+}
+
+:root {
+    --btn-color: rgba(0, 0, 0, 0.785);
+    --text-branco: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Configurações do menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    padding: 20px 0px;
+    margin: 0px 30px 80px 30px;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    text-decoration: none;
+    padding: 5px 50px;
+    color: var(--text-branco);
+    border: 1px solid var(--btn-color);
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid var(--btn-color);
+}
+
+.menu {
     display: flex;
     justify-content: space-around;
     gap: 50px;
-
 }
 
 /* Primeira seção */
 .primeiraSecao {
     display: flex;
+    flex-direction: row; /* As divs ficarão lado a lado */
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     margin: 150px 30px 150px 30px;
-    margin-bottom: 100px;
-
 }
+
 section div div h2 {
     font-size: 40px;
     margin-bottom: 50px;
@@ -74,23 +116,20 @@ section div div h2 {
     width: 600px;
 }
 
-.btnsaibamais{
+.btnsaibamais {
     color: black;
     background-color: white;
     border: 2px solid var(--btn-color);
 }
 
 .btnsaibamais:hover {
-    background-color:var(--btn-color) ;
-    text-decoration: none;
-    padding: 5px 50px;
+    background-color: var(--btn-color);
     color: var(--text-branco);
     border: 1px solid var(--btn-color);
 }
 
 /* Segunda Seção */
-
-.secao2{
+.secao2 {
     margin: 150px 30px 150px 30px;
     background-color: rgba(220, 220, 220, 0.17);
     padding: 30px;
@@ -104,7 +143,6 @@ h3 {
 
 .quadro2 {
     margin: 20px;
-
 }
 
 .atores {
@@ -113,10 +151,28 @@ h3 {
     margin: 70px 30px;
 }
 
+/* Terceira secao */
+
+.secao3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao3_quadros {
+    margin: 30px 50px 100px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.secao3_img {
+    width: 250px;
+}
+
 .quadro_texto_atores {
     width: 400px;
 }
-
 
 .quadro5 {
     margin: 30px;
@@ -124,25 +180,85 @@ h3 {
     background-color: rgba(220, 220, 220, 0.17);
     padding: 50px;
     border-radius: 20px;
-
-
 }
 
-.div_quadro5{
+.div_quadro5 {
     display: flex;
     flex-direction: column;
 }
 
-footer{
+/* Footer */
+footer {
     display: flex;
     justify-content: space-between;
     gap: 120px;
-    padding:  20px 0px;
+    padding: 20px 0px;
     margin: 0px 30px 80px 30px;
     border-bottom: 1px solid var(--btn-color);
-    
 }
 
 .fa-brands {
     margin: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .primeiraSecao {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .btn_login_menu {
+        display: none;
+    }
+
+    .imgPrincipal {
+        margin-top: 50px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .imgPrincipal {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .atores {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .secao2_ator {
+        text-align: center;
+        border-bottom: 1px solid var(--btn-color);
+    }
+
+    .secao3_quadros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .secao3_img {
+        margin-bottom: 20px;
+    }
+    .quadro1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
 }
