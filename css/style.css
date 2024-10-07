@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 /* Configurações Gerais */
 * {
     
@@ -216,15 +215,6 @@ footer {
     margin: 0px 30px;
 }
 
-/* .menuRedes {
-    display: flex;
-    gap: 30px;
-} */
-
-/* .fa-brands {
-    margin: 10px;
-} */
-
 /* Responsividade */
 @media (max-width: 768px) {
     .primeiraSecao {
@@ -256,16 +246,7 @@ footer {
         max-width: 400px;
         height: auto;
     }
-/* 
-    .atores {
-        display: flex;
-        flex-direction: column;
-        
-    } */
 
-    /* .secao2_ator {
-        text-align: center;
-    } */
 
     .secao3_quadros {
         display: flex;
@@ -282,7 +263,7 @@ footer {
     }
 
     .nomeRodape {
-        display: none;
+        display: none; 
     }
 
     .menuContato, .menuRedes {

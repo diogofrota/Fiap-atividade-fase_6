@@ -11,12 +11,14 @@
     --text-branco: white;
     --font-Style:Roboto;
     --cor-laranja: #ff8800;
+    --cor-degrade-laranja: #ff8800a2;
 
 }
 
 body {
     font-family: Roboto;
-    background-color: #f4f4f4;
+    background-color: linear-gradient(135deg, rgba(0, 0, 0, 0.785), rgba(0, 0, 0, 0.2));
+   
     color: #333;
 }
 
@@ -38,7 +40,7 @@ h1 {
 .texto {
     color: #ff8800;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 p {
@@ -56,7 +58,7 @@ p {
     background-color: #fff;
     border: 2px solid var(--btn-color);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -67,19 +69,19 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    margin-bottom: 20px;
+    margin: 0px;
 }
 
-.card h2 {
+.card h4 {
     color: var(--btn-color);
     margin-bottom: 10px;
 }
 
 .card:hover {
-    background-color: rgba(128, 128, 128, 0.548);
+    background-color: var(--cor-degrade-laranja);
     color: white;
 
-    border: 2px solid var(--btn-color);
+    border: 2px solid var(--cor-laranja);
 }
 
 /* Responsivo */
