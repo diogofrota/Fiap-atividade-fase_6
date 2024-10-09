@@ -12,6 +12,7 @@
     --font-Style:Roboto;
     --cor-laranja: #ff8800;
     --cor-degrade-laranja: #ff8800a2;
+    --cor-cinza: rgba(94, 93, 93, 0.228);
 
 }
 
@@ -32,10 +33,15 @@ h1 {
     /* margin-bottom: 10px; */
 }
 
+a {
+    text-decoration: none;
+}
+
 .texto {
     color: #ff8800;
     margin: 20px;
     font-size: 20px;
+    font-weight: 600;
 }
 
 
@@ -75,8 +81,8 @@ h1 {
 }
 
 .card:hover {
-    background-color: var(--cor-degrade-laranja);
-    border: 2px solid var(--cor-laranja);
+    background-color: var(--cor-cinza);
+    border: 2px solid rgba(0, 0, 0, 0.785);
 }
 
 /* Responsivo */

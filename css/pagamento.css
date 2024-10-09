@@ -72,7 +72,7 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--cor-laranja);
+    background-color: var(--btn-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -83,7 +83,9 @@ body {
 }
 
 .btn:hover {
-    background-color: var(--cor-degrade-laranja);
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 input[readonly] {
