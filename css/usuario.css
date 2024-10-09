@@ -82,7 +82,6 @@ p {
     color: white;
     background-color: var(--cor-cinza);
     border: 2px solid rgba(0, 0, 0, 0.785);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Responsivo */
@@ -95,4 +94,6 @@ p {
     .card {
         width: 80%;
     }
+
+
 }
