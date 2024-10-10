@@ -24,7 +24,7 @@ body {
 
 .container {
     text-align: center;
-    margin: 50px 50px;
+    margin: auto;
     max-width: 1200px;
 }
 
@@ -41,9 +41,19 @@ a {
     color: #ff8800;
     margin: 20px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
+  /* .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-degrade-laranja);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} */
 
 .cards {
     display: flex;
@@ -73,6 +83,7 @@ a {
 .card h4 {
     color: var(--btn-color);
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .card p {

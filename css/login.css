@@ -100,7 +100,10 @@ button {
     width: 100%;
 }
 
-
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .signup {
     margin-top: 20px;
