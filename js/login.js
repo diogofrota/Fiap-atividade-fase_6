@@ -8,7 +8,7 @@ btnlogin.addEventListener('click', (event)=> {
     let password = document.getElementById('passwordlogin').value
 
     if (email == 'julia@gmail.com' && password == 'abc123') {
-        window.location.href = '/html/opcaoCras.html'
+        window.location.href = '/html/telaAgenteSocial.html'
     } else {
         alert('digita o email')
     }

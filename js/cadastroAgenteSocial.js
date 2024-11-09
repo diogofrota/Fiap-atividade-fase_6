@@ -49,6 +49,9 @@ const cadastroCras = [{
   
     // Adicionando o objeto ao array
     cadastroCras.push(familiaCarente);
+
+    console.log("Novo cadastro adicionado:");
+    console.log(cadastroCras);
   
 
   });
@@ -68,3 +71,4 @@ btnlogin.addEventListener('click', (event)=> {
         alert('digita o email')
     }
 })
+
