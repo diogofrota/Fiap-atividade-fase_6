@@ -82,6 +82,9 @@ p {
     border: 4px solid black;
 }
 
+
+
+
 /* Responsivo */
 @media (max-width: 768px) {
     .cards {
