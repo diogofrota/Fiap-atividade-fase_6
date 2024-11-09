@@ -54,6 +54,10 @@ const cadastroCras = [{
     console.log(cadastroCras);
   
 
+    setTimeout( ()=> {
+      window.location.href ='/html/confirmaCadastro.html'
+    },500)
+
   });
   
 // Para fazer a verificação de senha

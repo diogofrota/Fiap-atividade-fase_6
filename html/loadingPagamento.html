@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubFomeZero</title>
+    <link rel="shortcut icon" href="../imagens/shopping-bag-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/confirmaPagamento.css">
+</head>
+<body>
+    <div class="container">
+        <div class="confirmation-box">
+            <h3>Pagamento em Processamento!</h3>
+            <br>
+            <img src="/imagens/loading.gif" alt="" class="anima">
+            <br>
+            <br>
+            <p>Agurade alguns instantes</p>
+        </div>
+    </div>
+    <script>
+      // Aguarda 5 segundos (5000 milissegundos) antes de redirecionar
+      setTimeout(() => {
+          window.location.href = "confirmaPagamento.html"; 
+      }, 5000);
+  </script>
+</body>
+</html>

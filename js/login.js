@@ -12,4 +12,5 @@ btnlogin.addEventListener('click', (event)=> {
     } else {
         alert('Digite o e-mail e a senha correta.')
     }
+    
 })

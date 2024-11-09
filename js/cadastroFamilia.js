@@ -1,9 +1,19 @@
-const cadastroFamilia = [{
-    nome: "Mario",
+const cadastroFamilia = [
+    {nome: "Mario",
     cpf: 11122233300,
     email: "mario@gmail.com",
-    telefone: 21999999999,
-  }];
+    telefone: 21999999999,},
+    
+    {nome: "Mario",
+    cpf: 11122233300,
+    email: "mario@gmail.com",
+    telefone: 21999999999,},
+    
+    {nome: "Mario",
+    cpf: 11122233300,
+    email: "mario@gmail.com",
+    telefone: 21999999999,},
+];
   
   
   let btn = document.getElementById('btn');
@@ -36,11 +46,8 @@ const cadastroFamilia = [{
     console.log(cadastroFamilia)
 
 
+
     setTimeout( ()=> {
-
-      // colocar um pagian previa de carregamento com gif animado de loading
-
-      
       window.location.href ='/html/confirmaCadastro.html'
     },500)
   });
