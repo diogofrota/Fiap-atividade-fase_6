@@ -40,11 +40,11 @@
                 </div>
                 <div class="form-group">
                     <label for="nome-pagador">Nome Completo</label>
-                    <input type="text" id="nome-pagador" name="nome-pagador" required>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" name="cpf" required maxlength="11">
+                    <input type="text" id="cpf" name="cpf"  maxlength="11">
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
@@ -52,30 +52,85 @@
                 </div>
                 <div class="form-group">
                     <label for="nome">Nome do Titular do Cartão</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="carta" name="carto" >
                 </div>
                 <div class="form-group">
                     <label for="numero-cartao">Número do Cartão</label>
-                    <input type="text" id="numero-cartao" name="numero-cartao" required maxlength="16">
+                    <input type="text" id="numero-cartao" name="numero-cartao"  maxlength="16">
                 </div>
                 <div class="form-group">
                     <label for="validade">Validade</label>
-                    <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+                    <input type="text" id="validade" name="validade" placeholder="MM/AA" >
                 </div>
                 <div class="form-group">
                     <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" required maxlength="3">
+                    <input type="text" id="cvv" name="cvv"  maxlength="3">
                 </div>
                 <div class="form-group">
                     <label for="valor">Valor da Cesta</label>
                     <input type="text" id="valor" name="valor" value="R$ 200,00" readonly>
                 </div>
 
-
-                <a href="./confirmaPagamento.html" class="btn" id="btn">Confirmar Pagamento</a>
+                
+                <!-- <a href="./confirmaPagamento.html" class="btn" id="btn">Confirmar Pagamento</a> -->
             </form>
+            <button class="btn" id="btn2">Enviar Email</button>
         </div>
     </div>
-    <script src="/js/loadingPagamento.js"></script>
+    <!-- <script src="/js/loadingPagamento.js"></script> -->
+
+    <!-- Script para importar o EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Inicialize o EmailJS ao carregar a página
+        (function () {
+            emailjs.init('XaduNiGEGvrL7Ossn'); // Substitua pelo seu USER_ID do EmailJS
+        })();
+
+        // Seleciona o botão e adiciona o listener para clique
+        let btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', sendMail);
+
+        function sendMail() {
+            // Captura o valor do email na hora do envio
+            let emailValue = document.querySelector('#email').value;
+            let nome = document.querySelector('#nome').value;
+
+            if (!emailValue) {
+                alert('Por favor, preencha o campo de email.');
+                return;
+            }
+
+            let params = {
+                email: emailValue,
+                message: "Mensagem de teste", // Ajuste conforme o template
+                to_name: nome // Ajuste conforme o template
+            };
+
+            // IDs do serviço e do template
+            let serviceID = 'service_7hrj3ce';
+            let templateID = 'template_xxel6jv';
+
+            // Envia o email com EmailJS
+            emailjs.send(serviceID, templateID, params)
+                .then((response) => {
+                    alert('Email enviado com sucesso!');
+                    console.log('SUCESSO:', response.status, response.text);
+                    window.location.href = '/html/loadingPagamento.html'
+                })
+                .catch((error) => {
+                    alert('Erro ao enviar email. Tente novamente.');
+                    console.error('ERRO:', error);
+                });
+
+
+           
+           
+        }
+    </script>
+
+
+
+  
 </body>
 </html>
