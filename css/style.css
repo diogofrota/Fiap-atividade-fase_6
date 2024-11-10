@@ -22,6 +22,15 @@ body {
     --cor-degrade-laranja: #ff8800a2;
 }
 
+/* configuração do video */
+.video {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
 a {
     text-decoration: none;
 }
