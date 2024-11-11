@@ -28,6 +28,11 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    border: 5px double black;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+   
 }
 
 
@@ -101,7 +106,7 @@ section div div h2 {
 
 /* Segunda Seção */
 .secao2 {
-    margin: 150px 30px 150px 30px;
+    margin: 90px 30px 150px 30px;
     background-color: rgba(220, 220, 220, 0.17);
     padding: 30px;
     border-radius: 10px;
@@ -241,8 +246,6 @@ footer {
         display: flex;
         justify-content: center;
         margin: 0px;
-        
-        /* margin: 0px 30px; */
     }
 
     footer {
@@ -264,5 +267,11 @@ footer {
 
     .quadro_texto_atores {
         width: 250px;
+    }
+}
+
+@media (min-width: 768px){
+    .video {
+        display: none;
     }
 }
